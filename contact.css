@@ -1,0 +1,91 @@
+body {
+  color: #ededed;
+  background: #081b29;
+}
+.navbar {
+  background: #051129;
+}
+.navbar-brand,
+.nav-link {
+  color: #fff !important;
+  font-size: 18px;
+}
+.navbar-brand:hover,
+.nav-link:hover {
+  color: #0ef !important;
+}
+.contact-header {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 2.5rem;
+  color: #0ef;
+}
+.card {
+  background: #051129;
+  border: none;
+}
+.card-body {
+  color: #ededed;
+}
+.form-control,
+.btn-primary {
+  background: #555557;
+  border: none;
+  color: #ededed;
+}
+.btn-primary {
+  background: #0ef;
+  color: #081b29;
+}
+.btn-primary:hover {
+  background: #00c3cc;
+  color: #fff;
+}
+.footer {
+  background: #051129;
+  padding: 20px 0;
+  text-align: center;
+  color: #ededed;
+}
+.contact-text h2 {
+  text-align: center;
+  color: #0ef;
+}
+.contact-text h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-text p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.contact-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.contact-list li {
+  font-size: 1.1rem;
+}
+.contact-form form .send {
+  display: inline-block;
+  background: #0ef;
+  padding: 14px 60px;
+  border-radius: 40px;
+  font-size: 18px;
+  color: #081b29;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+.contact-form textarea {
+  resize: none;
+  height: 220px;
+}
+.contact-form form .send:hover {
+  background-color: #0ef;
+  color: #081b29;
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+}

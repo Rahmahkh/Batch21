@@ -4,126 +4,324 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechCorp</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: #333;
-        color: white;
-      }
-      header img {
-        height: 50px;
-      }
-      header nav {
-        display: flex;
-        gap: 20px;
-      }
-      header nav a {
-        color: white;
-        text-decoration: none;
-        padding: 10px;
-      }
-      .content {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-      }
-      .boxes {
-        display: flex;
-        gap: 20px;
-      }
-      .box {
-        width: 45%;
-        border: 1px solid #ccc;
-        padding: 20px;
-        text-align: center;
-      }
-      .box img {
-        width: 100%;
-        height: auto;
-      }
-      .footer-nav {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        padding: 20px;
-        background-color: #333;
-        color: white;
-      }
-      .footer-nav a {
-        color: white;
-        text-decoration: none;
-      }
-    </style>
+    <link href="style.css" rel="stylesheet" />
+    <script src="main.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
-    <header>
-      <div>
-        <img src="https://via.placeholder.com/50" alt="TechCorp Logo" />
-        <span>TechCorp</span>
-      </div>
-      <nav>
-        <a href="#">HOME</a>
-        <a href="#">PRODUCT</a>
-        <a href="#">COMPANY</a>
-        <a href="#">MORE</a>
+    <header class="header1">
+      <a href="te11.jpg" class="logo1">TechCorp</a>
+
+      <nav class="navbar">
+        <a href="#" class="top1" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <!-- <a href="#skills" style="--i: 3">Skill</a> -->
+        <a href="#services" style="--i: 5">Services</a>
+        <a href="project.html" style="--i: 4">Projects</a>
+        <a href="contact.html" style="--i: 5">Contact</a>
       </nav>
-      <div>
-        <img src="https://via.placeholder.com/25" alt="Search Icon" />
-      </div>
     </header>
-    <div class="content">
-      <h1>Welcome to TechCorp</h1>
-      <div class="boxes">
-        <div class="box">
-          <img
-            src="https://unsplash.com/photos/NodtnCsLdTE/download?force=true"
-            alt="Beautiful Nature"
-          />
-          <h2>Our Green Initiative</h2>
-          <p>
-            Discover our latest efforts in sustainability and green technology.
-          </p>
-          <button>Learn More</button>
+    <section class="home">
+      <div class="home-content">
+        <h3>Welcome to</h3>
+        <h1>TechCorp</h1>
+        <h3>Your Destination for <span id="element"></span></h3>
+        <p>
+          with a legacy of innovation for over a decade.
+          <br />
+          Our expertise lies in cutting-edge electronics, seamless integration,
+          and transformative technology solutions!
+        </p>
+        <div class="home-sci">
+          <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+          <a href="#" style="--i: 7"><i class="bx bxl-instagram"></i></a>
+          <a href="#" style="--i: 8"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#" style="--i: 9"><i class="bx bxl-tiktok"></i></a>
         </div>
-        <div class="box">
-          <img
-            src="https://unsplash.com/photos/5QgIuuBxKwM/download?force=true"
-            alt="Advanced Technology"
-          />
-          <h2>Innovative Products</h2>
-          <p>Explore our new range of products designed for your needs.</p>
-          <button>Learn More</button>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+      <span class="home-imgHover"></span>
+    </section>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="te11.jpg" />
+      </div>
+      <div class="about-text">
+        <h2>About <span>TechCorp</span></h2>
+        <h4>Leading Innovator in Electronics</h4>
+        <p>
+          With a rich history of over a decade, TechCorp is committed to driving
+          technological advancement through innovation, experimentation, and
+          exploration. Our expertise spans cutting-edge electronics, seamless
+          integration, and transformative technology solutions. We thrive on
+          developing new technologies that push the boundaries of what’s
+          possible, ensuring our customers always have access to the latest and
+          greatest in tech. Beyond technology, our dedication to sustainability
+          and quality craftsmanship sets us apart in the industry.
+        </p>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+    </section>
+    <section class="services">
+      <div class="services" id="services">
+        <div class="container">
+          <h1 class="sub-title">Our <span>Services</span></h1>
+          <div class="services-list">
+            <div>
+              <i class="bx bx-code" style="color: #00eeff"></i>
+              <h2>Webpage Design Services</h2>
+              <p>
+                TechCorp offers professional webpage design services with over a
+                decade of experience in creating dynamic, user-friendly webpages
+                for a variety of clients. We specialize in designing visually
+                appealing and intuitive user interfaces, leveraging our
+                expertise in HTML, CSS, JavaScript, and modern web design tools.
+                Our strong understanding of responsive design and UX/UI best
+                practices ensures that we consistently deliver high-quality web
+                designs that enhance user engagement and satisfaction.
+              </p>
+              <a href="#" class="read">Read More</a>
+            </div>
+            <div>
+              <i class="bx bx-crop" style="color: #00eeff"></i>
+              <h2>Cloud Computing (AWS)</h2>
+              <p>
+                TechCorp offers comprehensive cloud computing services with
+                extensive expertise in AWS. Our team has in-depth knowledge of
+                cloud infrastructure, services, and best practices. We
+                specialize in deploying and managing cloud-based solutions that
+                ensure scalability, security, and efficiency. Our experience in
+                integrating cloud technologies with web design projects enables
+                us to provide holistic solutions that meet the modern business
+                needs of our clients.
+              </p>
+              <a href="#" class="read">Read More</a>
+            </div>
+            <div>
+              <i class="bx bxl-apple" style="color: #00eeff"></i>
+              <h2>Innovative Problem Solving</h2>
+              <p>
+                At TechCorp, we continuously enhance our problem-solving
+                capabilities by tackling complex Data Structures and Algorithms
+                (DSA) challenges. Our team leverages languages such as C++ and C
+                to solve intricate problems, staying up-to-date with the most
+                efficient algorithms and data handling techniques. This ongoing
+                practice sharpens our coding abilities and ensures that we bring
+                cutting-edge solutions to our web design and cloud computing
+                projects, consistently delivering high-performance and optimized
+                results for our clients.
+              </p>
+              <a href="#" class="read">Read More</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="text-content">
-        <p style="text-align: right">
-          TechCorp provides innovative solutions for your everyday needs. Our
-          products are designed to meet the highest standards of quality and
-          performance.
-        </p>
-        <p style="text-align: left">
-          Join us in our journey to make the world a better place with
-          technology. Stay updated with our latest news and releases.
-        </p>
+    </section>
+    <!-- 
+    <h1 class="sub-title">My <span>Skills</span></h1>
+     <section class="skills">
+      <div class="container1" id="skills">
+        <h1 class="heading1">Technical Skills</h1>
+        <div class="Technical-bars">
+          <div class="bar">
+            <i class="bx bxl-html5" style="color: #c95d2e"></i>
+            <div class="info">
+              <span>HTML</span>
+            </div>
+            <div class="progess-line html">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-css3" style="color: #147bbc"></i>
+            <div class="info">
+              <span>CSS</span>
+            </div>
+            <div class="progess-line css">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-javascript" style="color: #b0bc1e"></i>
+            <div class="info">
+              <span>Javascript</span>
+            </div>
+            <div class="progess-line javascript">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i class="bx bxl-react" style="color: #69bcbc"></i>
+            <div class="info">
+              <span>React</span>
+            </div>
+            <div class="progess-line react">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i
+              class="bx bxl-c-plus-plus"
+              style="color: rgba(0, 0, 255, 0.551)"
+            ></i>
+            <div class="info">
+              <span>C++</span>
+            </div>
+            <div class="progess-line cplus">
+              <span></span>
+            </div>
+          </div>
+        </div>
       </div>
+      <div class="container1">
+        <h1 class="heading1">Professional Skills</h1>
+        <div class="radial-bars">
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">90%</div>
+            <div class="text">Creativity</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">65%</div>
+            <div class="text">Communication</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">75%</div>
+            <div class="text">Problem Solving</div>
+          </div>
+          <div class="radial-bar">
+            <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+            </svg>
+            <div class="percentage">85%</div>
+            <div class="text">TeamWork</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div id="portfolio" id="project">
+        <div class="main-text" id="project">
+          <h2>Latest <span>Project</span></h2>
+          <div class="portfolio-content">
+            <div class="row">
+              <img src="images/project1.png" />
+              <div class="layer">
+                <h5>Web Page Designer</h5>
+                <p>
+                  Looking to collaborate on your next project? Visit my page to
+                  learn more and get in touch. I look forward to work with you!
+                </p>
+                <a href="newproj/index.html"
+                  ><i class="bx bx-show" style="color: #00eeff"></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <img src="images/project2.png" />
+              <div class="layer">
+                <h5>Cloud Computing (AWS)</h5>
+                <p>
+                  I have compiled a presentation showcasing everything I've
+                  learned about cloud computing during my internship at AWS.
+                  Click here to view the presentation and gain insights into my
+                  expertise.
+                </p>
+                <a href="resources/aws_doc.pdf"
+                  ><i class="bx bx-cloud" style="color: #00eeff"></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <img src="images/project3.png" />
+              <div class="layer">
+                <h5>LeetCode Journey</h5>
+                <p>
+                  I have recently started solving LeetCode problems to enhance
+                  my skills in data structures and algorithms. Click here to
+                  view my LeetCode profile and follow my progress.
+                </p>
+                <a href="https://leetcode.com/u/akashh023/"
+                  ><i class="bx bx-show" style="color: #00eeff"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact<span> Us</span></h2>
+        <h4>Let's Collaborate</h4>
+        <p>
+          We at TechCorp are always excited to connect with new clients and
+          explore potential collaborations. Whether you have a question about
+          our services, a project idea, or just want to chat about web design,
+          cloud computing, or innovative technology solutions, we'd love to hear
+          from you! You can reach out to us via email, phone, or through our
+          social media channels. Your inquiries are important to us, and we
+          strive to respond promptly. Looking forward to connecting with you and
+          discussing how we can work together!
+        </p>
+        <div class="contact-list">
+          <li>
+            <i class="bx bxs-send" style="color: #00eeff"
+              >&nbsp;contact@techcorp.com</i
+            >
+          </li>
+          <li>
+            <i class="bx bxs-phone" style="color: #00eeff"
+              >&nbsp;+91 9142339509</i
+            >
+          </li>
+        </div>
+        <div class="contact-icons">
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram"></i></a>
+          <a href=""><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="" placeholder="Enter your Name" required />
+          <input type="email" placeholder="Enter your Email" required />
+          <input type="" placeholder="Enter your Subject" />
+          <textarea
+            name=""
+            type=""
+            cols="40"
+            rows="10"
+            placeholder="Enter your messege"
+            required
+          ></textarea>
+          <input type="submit" value="submit" class="send" />
+        </form>
+      </div>
+    </section>-->
+    <div class="last-text">
+      <p>Developer @ TechCorp © 2024</p>
     </div>
-    <footer>
-      <div class="footer-nav">
-        <a href="#">HOME</a>
-        <a href="#">PRODUCT</a>
-        <a href="#">COMPANY</a>
-        <a href="#">MORE</a>
-      </div>
-    </footer>
+    <a href="#" class="top"
+      ><i class="bx bx-up-arrow-alt" style="color: #000"></i
+    ></a>
+    <script src="main.js"></script>
   </body>
 </html>
